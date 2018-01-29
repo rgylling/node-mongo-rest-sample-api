@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/rgylling/node-mongo-rest-sample-api/issues"
   },
-  "homepage": "https://github.com/rgylling/node-mongo-rest-sample-api#readme"
+  "homepage": "https://github.com/rgylling/node-mongo-rest-sample-api#readme",
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^5.0.2"
+  }
 }
