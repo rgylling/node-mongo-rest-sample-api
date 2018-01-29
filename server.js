@@ -3,6 +3,8 @@ const express = require('express'),
   port = process.env.PORT || 3000,
   mongoose = require('mongoose'),
   Task = require('./api/models/todoListModel'), //created model loading here
+  Test = require('./api/models/testModel') //created model loading here
+
   bodyParser = require('body-parser');
 
 // mongoose instance connection url connection
@@ -15,7 +17,10 @@ app.use(bodyParser.json());
 
 
 const routes = require('./api/routes/todoListRoutes'); //importing route
+const routes2 = require('./api/routes/testRoutes'); //importing route
 routes(app); //register the route
+routes2(app); //register the route
+
 
 
 app.listen(port);
